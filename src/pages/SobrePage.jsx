@@ -1,18 +1,16 @@
 import {
   Container,
   Stack,
-  Box,
   Heading,
   Text,
   Image,
-  SimpleGrid
+  SimpleGrid,
 } from "@chakra-ui/react";
 import Navbar from "../components/Navbar.tsx";
 
 export default function SobrePage() {
   return (
-    <Container maxW={"100%"}
-    >
+    <Container maxW={"100%"}>
       <Navbar />
 
       <Stack
@@ -46,15 +44,11 @@ export default function SobrePage() {
             <br />
           </Heading>
           <Text color={"gray.500"}>
-            Meu nome é Francisco, faço faculdade de ciência da computação na
-            Estácio de Sá, estou no segundo período atualmente, minhas
-            considerações sobre o projeto feito são: algumas dificuldades que
-            tive inicialmente por conta que comecei a mexer recentemente com
-            React.Js
+            Meu nome é Francisco, faço faculdade de ciência da computação na <br/>
+            Estácio de Sá, atualmente no segundo período e iniciando meus
+            estudos em JavaScript/React.js e node.js
           </Text>
-          <SimpleGrid spacing={8} columns={2}
-              >
-         
+          <SimpleGrid spacing={8} columns={2}>
             <Image
               borderRadius="full"
               boxSize="100px"
@@ -79,7 +73,6 @@ export default function SobrePage() {
               src="data:image/png;base64,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"
               alt="Typescript"
             />
-        
           </SimpleGrid>
           <Text color={"gray.500"}>
             Minhas técnologias usadas foram react.js, chakra-ui, javascript e um
@@ -109,15 +102,11 @@ export default function SobrePage() {
             </Text>
             <br />
           </Heading>
-         
+
           <Text color={"gray.500"}>
             Minhas dificuldades foram a criação de logica de cadastro (local) e
-            o consumo da API, sobre a responsividade não me preocupei tanto por
-            conta do Chakra-UI que me entrega já toda a componentização
-            responsiva.
-
-         
-
+            o consumo da API, e alguns usos de alguns Hooks. A responsividade, porém não foi uma experiência <br/>
+            tão ruim por conta do uso do Chakra-UI.
           </Text>
         </Stack>
       </Stack>
@@ -126,6 +115,8 @@ export default function SobrePage() {
   );
 }
 
-
 // por mais que tenha falhas, é aprendendo e crescendo cada vez mais que alcançamos a metaaa
-//
+//O uso da API e a criação de um Layoout por cima me ajudou bem mais aos meus estudos de orientações a objetos.
+//Codigo poderia estar mais organizado e dividido em mais componentes.
+//O uso dos Hooks foi uma certa dificuldade por conta que eu tinha pouca experiência em react.
+//typescript foi usado por conta que do template "Navbar"
