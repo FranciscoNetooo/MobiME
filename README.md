@@ -12,7 +12,7 @@ técnologias usadas:
 
 * Guia de execução
    1. Abrir o terminal de comandos da sua máquina
-   2. Fazer a clonagem deste repositório ou baixar-lo: `git clone https://github.com/FranciscooNeto/mobime`
+   2. Fazer a clonagem deste repositório ou baixar-lo: `git clone https://github.com/FranciscoNetooo/MobiME`
    3. Entrar na pasta do projeto pelo terminal, e instalar as dependências através do comando: `npm i`
    4. Após a instalação das dependências, iniciar o projeto executando o comando: `npm start`
 
